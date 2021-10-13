@@ -1,0 +1,9 @@
+section.Card-container{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 98.3%;
+    width: auto;
+}

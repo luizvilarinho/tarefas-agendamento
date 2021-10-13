@@ -1,0 +1,91 @@
+article.Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    cursor: pointer;
+    min-width: 32%;
+    background-color: var(--coldblue-color);
+    border-radius: 4px;
+    margin-top:15px;
+    margin-left:1px;
+    margin-right: 1px;
+    box-shadow: 0px 10px 10px rgb(172, 203, 233);
+}
+.Cards .content{
+    font-size: 0.9rem;
+    padding: 25px;
+    color:var(--dark-color);
+}
+.Cards .prazo{
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+.Cards svg{
+    vertical-align: middle;
+}
+.Cards .title{
+    color: var(--middle-color);
+    font-size: 1.2rem;
+}
+.Cards .description{
+    opacity: 0.8;
+}
+.Cards .label{
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: var(--middle-color);
+    color:rgb(141, 219, 202);
+    border-radius:4px;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    margin-left: 0.1rem;
+    
+}
+/* .Cards .label::after{
+    content: "x";
+    position: absolute;
+    padding: 0;
+    margin: -10px 0px 0px -6px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    cursor:pointer;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+} */
+.Cards .delete-tag{
+   
+
+}
+.Cards .tags{
+    text-align: right;
+    color: var(--dark-color)
+}
+.Cards .labels{
+    color:var(--middle-color);
+    font-size: 0.8rem;
+}
+.Cards .label span{
+    display: inline-block;
+   
+}
+.Cards .labels svg{
+    vertical-align: middle;
+}
+.Cards .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:var(--middle-color);
+    padding: 15px;
+}
+.Cards .alert{
+    padding: -15px;
+    width: 100%;
+    height: 5px;
+    background-color:var(--middle-color);
+    opacity: 0.8;
+}

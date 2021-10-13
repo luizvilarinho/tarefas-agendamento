@@ -1,0 +1,197 @@
+aside.Sidebar{
+    grid-row:1;
+    color: var(--dark-color);
+    animation-name: SidebarOn;
+    animation-duration: 0.5s;
+    z-index:2;
+}
+.Sidebar nav{
+    background-color: var(--middle-color);
+    padding: 0.8rem 0 0.8rem 0;
+    min-height: 100vh;
+    height: 100%;
+}
+.Sidebar .container{
+    position: relative;
+    left: 0px;
+    animation-name: ContainerShow;
+    animation-duration: 0.5s;
+}
+.Sidebar section{
+    width: 100%;
+    margin:15px 0 35px 0;
+}
+.Sidebar article{
+    margin: 15px 0 15px 0;
+    padding-left:0.8rem;
+}
+.Sidebar h3{
+    font-weight: 500;
+    padding-left:0.8rem;
+    display: inline-block;
+    width: 70%;
+    vertical-align: super;
+}
+.Sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.Sidebar li{
+    display:flex;
+    padding-left:0.8rem;
+    border-bottom:1px solid var(--light-color);
+    cursor:pointer;
+}
+.Sidebar li a{
+    width: 100%;
+    
+    padding:7px 0 7px 0;
+}
+.Sidebar li a:hover{
+    color:var(--light-color);
+}
+.Sidebar button{
+    padding: 0.3rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    cursor: pointer;
+    margin-right:15px;
+}
+.Sidebar button:active{
+    background-color: var(--dark-color);
+    color:var(--light-color);
+}
+.Sidebar label{
+    display:block;
+    padding-bottom:5px;
+    font-size: 0.8rem;
+}
+.Sidebar input, .Sidebar textarea{
+    background-color:rgba(255, 255, 255, 0.4);
+    color:var(--dark-color);
+    padding:6px;
+    width: 95%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.Sidebar input::placeholder, .Sidebar textarea::placeholder {
+    color: var(--dark-color);   
+}
+.selected{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.Sidebar i{
+    padding-left:0.8rem;
+    color:var(--dark-color);
+    cursor:pointer;
+    
+}
+.Sidebar .add-icon{
+    vertical-align: top;
+    cursor:pointer;
+}
+
+.Sidebar span.add-icon span{
+    vertical-align: super;
+    margin-left:3px;
+}
+
+@keyframes SidebarOff {
+    from {width: 15rem;}
+    to {width: 3.2rem;}
+}
+@keyframes SidebarOn {
+    from {width: 3.2rem;}
+    to {width: 15rem;}
+}
+@keyframes ContainerHide {
+    from {
+        position: relative;
+        left:0;
+    }
+    to {
+        position: relative;
+        left:-300px;
+    }
+}
+@keyframes ContainerShow{
+    from {
+        position: relative;
+        left: -300px;
+    }
+    to {
+        position: relative;
+        left: 0;
+    }
+}
+
+/*COLAPSE*/
+.Sidebar.colapse .container{
+    position: relative;
+    left: -300px;
+    animation-name:ContainerHide;
+    animation-duration: 0.5s;
+}
+
+aside.Sidebar.colapse{
+    width: 3.2rem;
+    animation-name:SidebarOff;
+    animation-duration: 0.2;
+
+}
+.Sidebar.colapse i{
+    color:var(--light-color);
+}
+.Sidebar .add-icon.add-selected{
+    color:var(--alert-color);
+    animation-name: addBtn;
+    animation-duration: 0.5s;
+}
+/*FormAddLista*/
+@keyframes openAddLista{
+    from {
+        position: relative;
+        top: -250px;
+    }
+    to {
+        position: relative;
+        top: 0;
+    }
+}
+@keyframes addBtn{
+    from {
+        color:var(--dark-color);
+    }
+    to {
+        color:var(--alert-color);
+    }
+}
+section.FormAddLista {
+    padding:10px 0;
+    background-color: var(--alert-color);
+    overflow: hidden;
+    
+}
+.FormAddLista article{
+    animation-name: openAddLista;
+    animation-duration: 0.5s;
+}
+.FormAddLista label{
+    color:var(--maroon-color);
+   
+}
+.FormAddLista input::placeholder{
+    opacity: 0.4;
+}
+.FormAddLista button{
+    background-color: var(--maroon-color);
+    color:var(--redlight-color);
+}
+.FormAddLista button:active{
+    background-color: var(--redlight-color);
+    color: var(--maroon-color);
+}
+.FormAddLista button.btn-secundary{
+    border-color:var(--maroon-color);
+    color:var(--dark-color);
+}
+

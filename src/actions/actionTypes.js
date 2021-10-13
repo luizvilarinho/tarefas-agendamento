@@ -1,0 +1,5 @@
+export const CLICK_UPDATE_VALUE = 'CLICK_UPDATE_VALUE';
+
+export const OTHER_UPDATE = 'OTHER_UPDATE';
+
+export const TAREFAS = 'TAREFAS';

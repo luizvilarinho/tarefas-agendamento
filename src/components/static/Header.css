@@ -1,0 +1,35 @@
+header.Header {
+    vertical-align: top;
+    background-color: var(--silver);
+    height: 2%;
+    /* background-color: #cecdcd; */
+    z-index:1;
+   
+}
+.Header section{
+   max-width: 100%;
+   margin-top: 0.5rem;
+}
+.Header .user-information{
+    text-align: right;
+    padding-right: 1rem;
+    width: 90%;
+}
+.Header .user-information div{
+    margin-left: 2rem;
+}
+.Header .list-name{
+    margin-left: 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.Header div{
+    /* padding: 5px 15px 5px 15px; */
+    color:#636363;
+    display: inline-block;
+    
+}
+.Header i{
+    vertical-align: top;
+    margin-right: 4px;
+}

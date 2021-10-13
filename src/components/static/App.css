@@ -1,0 +1,27 @@
+:root{
+    --light-color:#7FDBFF;
+    --coldblue-color:#afd8e9;
+    --ultra-light-color:white;
+    --dark-color:#001f3f;
+    --middle-color: #0074D9;
+    --danger-color:#FF4136;
+    --alert-color:#FF851B;
+    --maroon-color:#85144b;
+    --redlight-color:#ffa7a7;
+    --silver:#DDDDDD;
+}
+.App{
+    display:grid;
+}
+
+.colum-normal{
+    grid-template-columns:15rem auto;
+}
+.colum-colapse{
+    grid-template-columns:3rem auto;
+}
+button.btn-secundary{
+    background-color: unset;
+    border: 1px solid var(--silver);
+    color:var(--silver);
+}
